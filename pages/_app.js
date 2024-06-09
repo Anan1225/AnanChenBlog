@@ -1,4 +1,5 @@
-import 'prismjs/themes/prism.css'
+// import 'prismjs/themes/prism.css'
+import 'prismjs/themes/prism-funky.css'; // 导入 PrismJS Funky 主题
 import 'react-notion-x/src/styles.css'
 import 'katex/dist/katex.min.css'
 import App from 'next/app'
@@ -15,7 +16,7 @@ import Scripts from '@/components/Scripts'
 const Ackee = dynamic(() => import('@/components/Ackee'), { ssr: false })
 const Gtag = dynamic(() => import('@/components/Gtag'), { ssr: false })
 
-export default function MyApp ({ Component, pageProps, config, locale }) {
+export default function MyApp({ Component, pageProps, config, locale }) {
   return (
     <ConfigProvider value={config}>
       <Scripts />
